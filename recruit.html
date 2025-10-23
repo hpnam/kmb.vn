@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="vi">
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>KMB – Live Studio & Creator Network</title>
+    <meta name="description" content="KMB – Hệ thống Live Studio, tuyển dụng creator TikTok LIVE, sự kiện & hỗ trợ kỹ thuật livestream toàn quốc." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root { color-scheme: light dark; }
+      html { scroll-behavior: smooth; }
+      body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji"; }
+      .glass { backdrop-filter: blur(10px); background: rgb(255 255 255 / 0.06); }
+      .shadow-soft { box-shadow: 0 20px 40px rgba(0,0,0,.08); }
+    </style>
+  </head>
+
+  <body class="bg-neutral-50 text-neutral-900">
+    
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-neutral-200">
+      <div class="max-w-7xl mx-auto px-4 py-3 flex items-center justify-between">
+        <a href="index.html" class="flex items-center gap-3">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="28" height="28" fill="currentColor" class="text-black"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87L18.18 22 12 18.77 5.82 22 7 14.14l-5-4.87 6.91-1.01z"/></svg>
+          <span class="font-extrabold tracking-tight text-xl">KMB</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+          <a href="index.html" class="hover:text-black/70">Trang chủ</a><a href="studios.html" class="hover:text-black/70">Live Studio</a><a href="policy.html" class="hover:text-black/70">Chính sách</a><a href="events.html" class="hover:text-black/70">Sự kiện</a><a href="store.html" class="hover:text-black/70">Cửa hàng</a><a href="recruit.html" class="hover:text-black/70 text-black">Tuyển dụng</a><a href="contact.html" class="hover:text-black/70">Liên hệ</a>
+        </nav>
+        <a href="contact.html" class="inline-flex items-center gap-2 rounded-xl bg-black text-white px-4 py-2 text-sm font-semibold hover:bg-neutral-800 transition">Liên hệ ngay</a>
+      </div>
+    </header>
+    
+    
+    
+    <section class="max-w-7xl mx-auto px-4 py-16">
+      <div class="max-w-2xl">
+        <h1 class="text-3xl md:text-4xl font-extrabold">Tuyển dụng Creator TikTok LIVE</h1>
+        <p class="text-neutral-700 mt-2">Nhảy/ca/MC/game, full-time & part-time. Training nội dung, hỗ trợ lên kênh.</p>
+      </div>
+      <form class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4" onsubmit="event.preventDefault(); alert('Đã gửi đăng ký!');">
+        <input required placeholder="Họ và tên" class="border border-neutral-300 bg-neutral-100 rounded-xl px-4 py-3" />
+        <input required placeholder="Số điện thoại/Zalo" class="border border-neutral-300 bg-neutral-100 rounded-xl px-4 py-3" />
+        <input placeholder="Link TikTok (nếu có)" class="border border-neutral-300 bg-neutral-100 rounded-xl px-4 py-3 md:col-span-2" />
+        <textarea placeholder="Giới thiệu ngắn về bạn" class="border border-neutral-300 bg-neutral-100 rounded-xl px-4 py-3 md:col-span-2" rows="4"></textarea>
+        <button class="rounded-xl bg-black text-white px-5 py-3 font-semibold md:col-span-2">Gửi đăng ký</button>
+      </form>
+    </section>
+
+    
+    <!-- Footer -->
+    <footer class="border-t border-neutral-200">
+      <div class="max-w-7xl mx-auto px-4 py-10 text-sm text-neutral-600 flex flex-col md:flex-row items-center justify-between gap-4">
+        <p>© <span id="y"></span> KMB. All rights reserved.</p>
+        <div class="flex items-center gap-4">
+          <a href="#" class="hover:text-neutral-900">Điều khoản</a>
+          <a href="#" class="hover:text-neutral-900">Chính sách bảo mật</a>
+        </div>
+      </div>
+    </footer>
+    <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+    
+    
+    <!-- Floating Action Buttons: Zalo & Hotline -->
+    <div class="fixed z-[60] bottom-5 right-5 flex flex-col items-end gap-3">
+      <!-- Zalo -->
+      <a href="https://zalo.me/" target="_blank" rel="noopener" aria-label="Nhắn Zalo"
+         class="group inline-flex items-center gap-2 rounded-full bg-[#0068ff] text-white shadow-lg px-4 py-3 hover:brightness-110 active:scale-95 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" class="shrink-0">
+          <path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+        </svg>
+        <span class="font-semibold">Nhắn Zalo</span>
+      </a>
+      <!-- Hotline -->
+      <a href="tel:+8400000000" aria-label="Gọi Hotline"
+         class="group inline-flex items-center gap-2 rounded-full bg-black text-white shadow-lg px-4 py-3 hover:bg-neutral-800 active:scale-95 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" class="shrink-0">
+          <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.1.36 2.29.55 3.58.55a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.85 22 2 13.15 2 2a1 1 0 0 1 1-1h3.51a1 1 0 0 1 1 1c0 1.29.19 2.48.55 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/>
+        </svg>
+        <span class="font-semibold">Hotline 0000 000 000</span>
+      </a>
+    </div>
+
+  </body>
+</html>
