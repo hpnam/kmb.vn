@@ -7,6 +7,7 @@
     <meta name="description" content="KMB – Hệ thống Live Studio, tuyển dụng creator TikTok LIVE, sự kiện & hỗ trợ kỹ thuật livestream toàn quốc." />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.png" />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <!-- Tailwind via CDN (phù hợp GitHub Pages, không cần build) -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -31,6 +32,7 @@
           <a href="#policy" class="hover:text-black/70">Chính sách</a>
           <a href="#events" class="hover:text-black/70">Sự kiện</a>
           <a href="#store" class="hover:text-black/70">Cửa hàng</a>
+          <a href="#services" class="hover:text-black/70">Dịch vụ</a>
           <a href="#recruit" class="hover:text-black/70">Tuyển dụng</a>
           <a href="#contact" class="hover:text-black/70">Liên hệ</a>
         </nav>
@@ -63,14 +65,11 @@
           <h2 class="text-2xl md:text-3xl font-extrabold">Danh sách Live Studio</h2>
           <p class="text-neutral-600 mt-2">Phủ sóng Bắc – Trung – Nam. Luôn mở rộng hệ thống đối tác.</p>
         </div>
-        <form class="hidden md:block">
-          <input type="search" placeholder="Tìm theo tỉnh/thành…" class="border border-neutral-300 rounded-xl px-4 py-2 focus:outline-none focus:ring-2 focus:ring-black/10" oninput="filterStudios(this.value)">
-        </form>
       </div>
       <div id="studioGrid" class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <article class="studio-card rounded-2xl border border-neutral-200 bg-white p-5 shadow-soft" data-city="TP HCM">
           <h3 class="font-bold text-lg">KMB Studio – TP.HCM</h3>
-          <p class="text-sm text-neutral-600 mt-1">Quận 1 • TikTok Studio, OBS, key âm thanh bản quyền.</p>
+          <p class="text-sm text-neutral-600 mt-1">Văn phòng 01, Tầng 09, Pearl Plaza, 561A Điện Biên Phủ, Thạnh Mỹ Tây, TP.HCM • TikTok Studio, OBS, key âm thanh bản quyền.</p>
           <div class="mt-4 flex gap-2">
             <a href="tel:+84881234567" class="text-sm font-semibold rounded-lg bg-black text-white px-3 py-2">Gọi ngay</a>
             <a href="https://zalo.me/" target="_blank" class="text-sm font-semibold rounded-lg border border-neutral-300 px-3 py-2">Zalo</a>
@@ -78,7 +77,7 @@
         </article>
         <article class="studio-card rounded-2xl border border-neutral-200 bg-white p-5 shadow-soft" data-city="Cần Thơ">
           <h3 class="font-bold text-lg">KMB Studio – Cần Thơ</h3>
-          <p class="text-sm text-neutral-600 mt-1">Ninh Kiều • Phòng tiêu âm, đèn fill, setup chuẩn TikTok LIVE.</p>
+          <p class="text-sm text-neutral-600 mt-1">Quận Ninh Kiều, trung tâm Cần Thơ • Phòng tiêu âm đạt chuẩn, đèn fill 3 điểm, hỗ trợ setup livestream bán hàng.</p>
           <div class="mt-4 flex gap-2">
             <a href="tel:+84901234568" class="text-sm font-semibold rounded-lg bg-black text-white px-3 py-2">Gọi ngay</a>
             <a href="https://zalo.me/" target="_blank" class="text-sm font-semibold rounded-lg border border-neutral-300 px-3 py-2">Zalo</a>
@@ -86,7 +85,7 @@
         </article>
         <article class="studio-card rounded-2xl border border-neutral-200 bg-white p-5 shadow-soft" data-city="Cà Mau">
           <h3 class="font-bold text-lg">KMB Studio – Cà Mau</h3>
-          <p class="text-sm text-neutral-600 mt-1">TP Cà Mau • Studio không gian trẻ, hỗ trợ full thiết bị.</p>
+          <p class="text-sm text-neutral-600 mt-1">Phường 5, TP Cà Mau • Studio phong cách trẻ trung, cung cấp đầy đủ thiết bị và đội ngũ kỹ thuật onsite.</p>
           <div class="mt-4 flex gap-2">
             <a href="tel:+84901234569" class="text-sm font-semibold rounded-lg bg-black text-white px-3 py-2">Gọi ngay</a>
             <a href="https://zalo.me/" target="_blank" class="text-sm font-semibold rounded-lg border border-neutral-300 px-3 py-2">Zalo</a>
@@ -113,7 +112,6 @@
             <p class="text-white/80 mt-2">Soundcard, micro, đèn, phần mềm âm thanh, kích hoạt TikTok Studio.</p>
           </div>
         </div>
-        <a href="#recruit" class="mt-8 inline-flex items-center gap-2 rounded-xl bg-white text-black px-5 py-3 font-semibold">Đăng ký ngay</a>
       </div>
     </section>
 
@@ -124,7 +122,6 @@
           <h2 class="text-2xl md:text-3xl font-extrabold">Sự kiện & Liveshow</h2>
           <p class="text-neutral-600 mt-2">Cập nhật hoạt động cộng đồng, cuộc thi, workshop định kỳ.</p>
         </div>
-        <a href="#contact" class="hidden md:inline-flex rounded-xl border border-neutral-300 px-4 py-2 font-semibold">Đăng ký biểu diễn</a>
       </div>
       <div class="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6">
         <article class="rounded-2xl overflow-hidden border border-neutral-200 bg-white shadow-soft">
@@ -168,30 +165,106 @@
       </div>
     </section>
 
-    <!-- Recruit -->
-    <section id="recruit" class="max-w-7xl mx-auto px-4 py-16">
-      <div class="max-w-2xl">
-        <h2 class="text-2xl md:text-3xl font-extrabold">Tuyển dụng Creator TikTok LIVE</h2>
-        <p class="text-neutral-700 mt-2">Nhảy/ca/MC/game, full-time & part-time. Training nội dung, hỗ trợ lên kênh.</p>
+    <!-- Services -->
+    <section id="services" class="bg-white border-b border-neutral-200">
+      <div class="max-w-7xl mx-auto px-4 py-12 md:py-16">
+        <div class="max-w-3xl">
+          <h2 class="text-2xl md:text-3xl font-extrabold">Sản xuất video quảng bá thương hiệu</h2>
+          <p class="text-neutral-700 mt-3">Dịch vụ cho sản phẩm mới, cửa hàng, quán ăn, quán café cần hiện diện số chuyên nghiệp và tối ưu chuyển đổi.</p>
+        </div>
+        <div class="mt-8 md:mt-10 grid gap-5 md:gap-6 sm:grid-cols-2 md:grid-cols-3">
+          <article class="rounded-2xl border border-neutral-200 bg-neutral-50 p-5 md:p-6 shadow-soft">
+            <h3 class="text-lg font-bold">Sản xuất video</h3>
+            <ul class="mt-3 space-y-2 text-sm text-neutral-600">
+              <li>Lên ý tưởng, kịch bản và storyboard theo mục tiêu chiến dịch.</li>
+              <li>Quay dựng đa nền tảng: TikTok, Reels, YouTube Shorts, TVC ngắn.</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-neutral-200 bg-neutral-50 p-5 md:p-6 shadow-soft">
+            <h3 class="text-lg font-bold">Lập &amp; bảo trì website</h3>
+            <ul class="mt-3 space-y-2 text-sm text-neutral-600">
+              <li>Thiết kế landing page giới thiệu sản phẩm, menu, ưu đãi.</li>
+              <li>Cập nhật nội dung, tối ưu tốc độ, tích hợp chat &amp; đo lường.</li>
+            </ul>
+          </article>
+          <article class="rounded-2xl border border-neutral-200 bg-neutral-50 p-5 md:p-6 shadow-soft">
+            <h3 class="text-lg font-bold">Chạy truyền thông</h3>
+            <ul class="mt-3 space-y-2 text-sm text-neutral-600">
+              <li>Thiết lập quảng cáo đa nền tảng, remarketing và tracking KPI.</li>
+              <li>Tối ưu tỷ lệ chuyển đổi, báo cáo định kỳ và đề xuất cải thiện.</li>
+            </ul>
+          </article>
+        </div>
+        <div class="mt-8 md:mt-10">
+          <a href="#contact" class="inline-flex w-full sm:w-auto items-center justify-center sm:justify-start gap-2 rounded-xl bg-black text-white px-5 py-3 font-semibold hover:bg-neutral-800 transition">
+            Nhận tư vấn triển khai
+          </a>
+        </div>
       </div>
-      <form class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4" onsubmit="event.preventDefault(); alert('Đã gửi đăng ký!');">
-        <input required placeholder="Họ và tên" class="border border-neutral-300 bg-neutral-100 rounded-xl px-4 py-3" />
-        <input required placeholder="Số điện thoại/Zalo" class="border border-neutral-300 bg-neutral-100 rounded-xl px-4 py-3" />
-        <input placeholder="Link TikTok (nếu có)" class="border border-neutral-300 bg-neutral-100 rounded-xl px-4 py-3 md:col-span-2" />
-        <textarea placeholder="Giới thiệu ngắn về bạn" class="border border-neutral-300 bg-neutral-100 rounded-xl px-4 py-3 md:col-span-2" rows="4"></textarea>
-        <button class="rounded-xl bg-black text-white px-5 py-3 font-semibold md:col-span-2">Gửi đăng ký</button>
-      </form>
+    </section>
+
+    <!-- Recruit -->
+    <section id="recruit" class="max-w-7xl mx-auto px-4 py-14 md:py-20">
+      <div class="grid gap-10 md:gap-12 items-start md:grid-cols-[minmax(0,1.4fr)_minmax(0,1fr)]">
+        <div class="space-y-6 md:space-y-8">
+          <div>
+            <h2 class="text-2xl md:text-3xl font-extrabold">Tuyển dụng Idol live tại nhà</h2>
+            <p class="text-neutral-700 mt-3">KMB mở rộng mạng lưới idol live tại nhà với chế độ linh hoạt, thu nhập cạnh tranh và hỗ trợ set up ngay tại không gian cá nhân của bạn.</p>
+            <div class="mt-6 md:mt-8 rounded-2xl border border-neutral-200 bg-white p-5 md:p-6 shadow-soft">
+              <h3 class="text-lg font-bold">Setup phòng live tại gia</h3>
+              <p class="text-neutral-600 mt-2">Đồng hành từ tư vấn layout đến bàn giao checklist vận hành, phù hợp mục tiêu giải trí hoặc bán hàng.</p>
+              <ul class="mt-3 space-y-2 text-sm text-neutral-600">
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-lime-400"></span>
+                  <span>Âm thanh, ánh sáng, background được thiết kế theo concept thương hiệu cá nhân.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <span class="mt-1 h-1.5 w-1.5 rounded-full bg-lime-400"></span>
+                  <span>Cấu hình thiết bị, phần mềm live, kiểm tra đường truyền và đào tạo vận hành.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="grid gap-4 md:gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-2xl border border-neutral-200 bg-white p-5 md:p-6 shadow-soft">
+              <h3 class="text-lg font-bold">Ứng dụng Bigolive, TikTok</h3>
+              <ul class="mt-3 space-y-2 text-sm text-neutral-600">
+                <li>Chính sách tuyển dụng agency minh bạch, hỗ trợ KPI và báo cáo.</li>
+                <li>Chính sách idol live riêng, đảm bảo quyền lợi và lịch phát sóng linh hoạt.</li>
+              </ul>
+            </article>
+            <article class="rounded-2xl border border-neutral-200 bg-white p-5 md:p-6 shadow-soft">
+              <h3 class="text-lg font-bold">TikTok LIVE – Creator</h3>
+              <ul class="mt-3 space-y-2 text-sm text-neutral-600">
+                <li>Định hướng nội dung cá nhân hóa, xây dựng kênh bền vững.</li>
+                <li>Kết nối hợp tác quảng bá thương hiệu, nhãn hàng phù hợp tệp người xem.</li>
+              </ul>
+            </article>
+            <article class="rounded-2xl border border-neutral-200 bg-white p-5 md:p-6 shadow-soft">
+              <h3 class="text-lg font-bold">Nền tảng live khác</h3>
+              <p class="text-sm text-neutral-600 mt-3">Mở rộng cơ hội trên các nền tảng live khác thông qua hợp tác với idol đã có cộng đồng người xem trung thành.</p>
+            </article>
+          </div>
+        </div>
+        <form id="recruitForm" class="grid w-full grid-cols-1 gap-3 md:gap-4 rounded-2xl border border-neutral-200 bg-white p-5 md:p-8 shadow-soft md:grid-cols-2">
+          <input required name="fullName" placeholder="Họ và tên" class="rounded-xl border border-neutral-300 bg-neutral-100 px-4 py-3" />
+          <input required name="phone" placeholder="Số điện thoại/Zalo" class="rounded-xl border border-neutral-300 bg-neutral-100 px-4 py-3" />
+          <input name="tiktok" placeholder="Link TikTok (nếu có)" class="rounded-xl border border-neutral-300 bg-neutral-100 px-4 py-3 md:col-span-2" />
+          <textarea name="intro" placeholder="Giới thiệu ngắn về bạn" class="rounded-xl border border-neutral-300 bg-neutral-100 px-4 py-3 md:col-span-2" rows="4"></textarea>
+          <button type="submit" class="rounded-xl bg-black px-5 py-3 font-semibold text-white md:col-span-2 transition hover:bg-neutral-800 disabled:opacity-70 disabled:cursor-not-allowed">Gửi đăng ký</button>
+        </form>
+      </div>
     </section>
 
     <!-- Contact -->
     <section id="contact" class="bg-neutral-900 text-white">
-      <div class="max-w-7xl mx-auto px-4 py-16 grid md:grid-cols-3 gap-8">
+      <div class="max-w-7xl mx-auto px-4 py-14 md:py-20 grid md:grid-cols-3 gap-6 md:gap-8">
         <div class="md:col-span-2">
           <h2 class="text-2xl md:text-3xl font-extrabold">Liên hệ KMB</h2>
           <p class="text-white/80 mt-2">Tư vấn set up phòng live, hợp tác Studio, booking sự kiện.</p>
           <div class="mt-6 grid sm:grid-cols-2 gap-3">
-            <a href="tel:+8400000000" class="rounded-xl bg-white text-black px-5 py-3 font-semibold text-center">Gọi: 0000 000 000</a>
-            <a href="https://zalo.me/" target="_blank" class="rounded-xl border border-white/30 px-5 py-3 font-semibold text-center">Zalo OA</a>
+            <a href="tel:+84347371696" class="rounded-xl bg-white text-black px-5 py-3 font-semibold text-center">Gọi: 0347 371 696</a>
+            <a href="https://zalo.me/0347371696" target="_blank" rel="noopener" class="rounded-xl border border-white/30 px-5 py-3 font-semibold text-center" aria-label="Zalo 0347 371 696">ZALO</a>
           </div>
         </div>
         <div class="space-y-3">
@@ -201,7 +274,11 @@
           </div>
           <div class="rounded-2xl glass p-4 border border-white/10">
             <p class="text-sm text-white/70">Địa chỉ</p>
-            <p class="font-semibold">Số 123, Quận 1, TP.HCM</p>
+            <p class="font-semibold">Văn phòng 01, Tầng 09, Tòa nhà Pearl Plaza, 561A Điện Biên Phủ, Phường Thạnh Mỹ Tây, TP Hồ Chí Minh, Việt Nam</p>
+          </div>
+          <div class="rounded-2xl glass p-4 border border-white/10">
+            <p class="text-sm text-white/70">Facebook</p>
+            <a href="https://www.facebook.com/share/1BvpbiT1o5/" target="_blank" rel="noopener" class="font-semibold text-white hover:text-lime-300 transition">KMB trên Facebook</a>
           </div>
         </div>
       </div>
@@ -228,27 +305,94 @@
           c.style.display = city.includes(s) ? '' : 'none';
         });
       }
+
+      document.addEventListener('DOMContentLoaded', () => {
+        const recruitForm = document.getElementById('recruitForm');
+        const relayForm = document.getElementById('formspreeRelay');
+        if (!recruitForm || !relayForm) return;
+
+        const relayMessageField = relayForm.querySelector('textarea[name="message"]');
+        const relayEmailField = relayForm.querySelector('input[name="email"]');
+        if (!relayMessageField || !relayEmailField) return;
+
+        const submitBtn = recruitForm.querySelector('button[type="submit"]');
+        const defaultBtnText = submitBtn ? submitBtn.textContent : '';
+
+        recruitForm.addEventListener('submit', async (event) => {
+          event.preventDefault();
+
+          const formData = new FormData(recruitForm);
+          const name = (formData.get('fullName') || '').toString().trim();
+          const phone = (formData.get('phone') || '').toString().trim();
+          const tiktok = (formData.get('tiktok') || '').toString().trim();
+          const intro = (formData.get('intro') || '').toString().trim();
+
+          const message = [
+            `Họ tên: ${name || 'N/A'}`,
+            `Số điện thoại/Zalo: ${phone || 'N/A'}`,
+            `Link TikTok: ${tiktok || 'N/A'}`,
+            `Giới thiệu: ${intro || 'N/A'}`
+          ].join('\n');
+
+          relayMessageField.value = message;
+          relayEmailField.value = 'idol@kmb.vn';
+
+          if (submitBtn) {
+            submitBtn.disabled = true;
+            submitBtn.textContent = 'Đang gửi...';
+          }
+
+          try {
+            const response = await fetch(relayForm.action, {
+              method: relayForm.method,
+              body: new FormData(relayForm),
+              headers: { 'Accept': 'application/json' }
+            });
+
+            if (response.ok) {
+              recruitForm.reset();
+              alert('Đã gửi đăng ký! KMB sẽ liên hệ trong thời gian sớm nhất.');
+            } else {
+              alert('Gửi đăng ký thất bại, vui lòng thử lại.');
+            }
+          } catch (error) {
+            console.error(error);
+            alert('Không thể gửi đăng ký. Vui lòng kiểm tra kết nối và thử lại.');
+          } finally {
+            if (submitBtn) {
+              submitBtn.disabled = false;
+              submitBtn.textContent = defaultBtnText;
+            }
+          }
+        });
+      });
     </script>
       
     <!-- Floating Action Buttons: Zalo & Hotline -->
-    <div class="fixed z-[60] bottom-5 right-5 flex flex-col items-end gap-3">
+    <div class="fixed z-[60] bottom-4 right-4 sm:bottom-5 sm:right-5 flex flex-col items-end gap-2.5 sm:gap-3">
       <!-- Zalo -->
-      <a href="https://zalo.me/" target="_blank" rel="noopener" aria-label="Nhắn Zalo"
-         class="group inline-flex items-center gap-2 rounded-full bg-[#0068ff] text-white shadow-lg px-4 py-3 hover:brightness-110 active:scale-95 transition">
+      <a href="https://zalo.me/0347371696" target="_blank" rel="noopener" aria-label="Nhắn Zalo 0347 371 696"
+         class="group inline-flex items-center gap-2 rounded-full bg-[#0068ff] text-white shadow-lg px-3.5 py-2.5 sm:px-4 sm:py-3 hover:brightness-110 active:scale-95 transition">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" class="shrink-0">
           <path d="M20 2H4a2 2 0 0 0-2 2v18l4-4h14a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
         </svg>
-        <span class="font-semibold">Nhắn Zalo</span>
+        <span class="font-semibold tracking-wide">ZALO</span>
       </a>
       <!-- Hotline -->
-      <a href="tel:+8400000000" aria-label="Gọi Hotline"
-         class="group inline-flex items-center gap-2 rounded-full bg-black text-white shadow-lg px-4 py-3 hover:bg-neutral-800 active:scale-95 transition">
+      <a href="tel:+84347371696" aria-label="Gọi Hotline 0347 371 696"
+         class="group inline-flex items-center gap-2 rounded-full bg-black text-white shadow-lg px-3.5 py-2.5 sm:px-4 sm:py-3 hover:bg-neutral-800 active:scale-95 transition">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="22" height="22" fill="currentColor" class="shrink-0">
           <path d="M6.62 10.79a15.05 15.05 0 0 0 6.59 6.59l2.2-2.2a1 1 0 0 1 1.01-.24c1.1.36 2.29.55 3.58.55a1 1 0 0 1 1 1V21a1 1 0 0 1-1 1C10.85 22 2 13.15 2 2a1 1 0 0 1 1-1h3.51a1 1 0 0 1 1 1c0 1.29.19 2.48.55 3.58a1 1 0 0 1-.25 1.01l-2.2 2.2z"/>
         </svg>
-        <span class="font-semibold">Hotline 0000 000 000</span>
+        <span class="font-semibold">Hotline 0347 371 696</span>
       </a>
     </div>
+
+    <!-- Hidden Formspree relay -->
+    <form id="formspreeRelay" action="https://formspree.io/f/mgvpplrd" method="POST" class="hidden" aria-hidden="true">
+      <input type="email" name="email" value="idol@kmb.vn" autocomplete="email">
+      <textarea name="message"></textarea>
+    </form>
 
   </body>
 </html>
